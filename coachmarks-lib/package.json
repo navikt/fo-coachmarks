@@ -1,0 +1,49 @@
+{
+  "name": "coachmarks-lib",
+  "version": "0.1.0",
+  "dependencies": {
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.10",
+    "@types/react": "16.8.22",
+    "@types/react-dom": "16.8.4",
+    "typescript": "3.5.2",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "files": [ "dist", "README.md" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/navikt/fo-coachmarks"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
