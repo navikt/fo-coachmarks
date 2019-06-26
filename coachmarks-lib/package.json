@@ -39,14 +39,17 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "index.js",
+  "module": "index.js",
   "files": [
-    "dist",
-    "README.md"
+    "index.tsx"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/navikt/fo-coachmarks"
+  },
+  "targets": {
+    "browsers": ["last 2 versions", "safari >= 7"],
+    "node": "6.10"
   }
 }
